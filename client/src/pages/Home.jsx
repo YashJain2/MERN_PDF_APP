@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
+import UploadAndFetchPDF from "./UploadFetch";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -40,6 +41,7 @@ const Home = () => {
           Welcome <span>{username}</span>
         </h4>
         <button onClick={Logout}>LOGOUT</button>
+        <UploadAndFetchPDF/>
       </div>
       <ToastContainer />
     </>

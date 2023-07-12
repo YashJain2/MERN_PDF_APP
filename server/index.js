@@ -5,6 +5,7 @@ const app = express();
 require("dotenv").config();
 const cookieParser = require("cookie-parser");
 const authRoute = require("./Routes/AuthRoute");
+const pdfRoute = require("./Routes/PdfRoute");
 const { MONGO_URL, PORT } = process.env;
 
 mongoose
@@ -27,6 +28,9 @@ app.use(cookieParser());
 app.use(express.json());
 
 app.use("/", authRoute);
+
+//PDF routes
+app.use('/', pdfRoute);
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
