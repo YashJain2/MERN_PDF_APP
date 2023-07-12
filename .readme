@@ -1,0 +1,8 @@
+#PDF Application TODOs
+
+- Check for upload and fetch routes in frontend
+- Test the pdf routes
+- Make the list of pdf's uploaded by users on home page
+- Create a share link on pdf 
+- validate the share link then open in home page while validating using jwt token
+- Create unit test cases

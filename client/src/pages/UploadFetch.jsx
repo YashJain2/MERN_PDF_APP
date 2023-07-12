@@ -17,7 +17,7 @@ const UploadAndFetchPDF = () => {
         " http://localhost:4000/upload-pdf", 
         {
           headers:{
-            cookies: "iuwecdibewicyuwiub2efi8923gf38v3g"
+            cookies: document.cookie
           }
         },
         { withCredentials: true }
